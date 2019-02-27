@@ -20,7 +20,7 @@ html {
     .header__header-logo {
       position: absolute;
       height: 10rem;
-      top: 20%;
+      top: 22%;
       left: 70%; }
       .header__header-name{
       position: absolute;
@@ -29,14 +29,16 @@ html {
       right: 12%; 
       font-size: 4rem;
       color: #fff;
+      font-weight: 400;
       }
     .header__header-caption{
       position: absolute;
       height: 10rem;
       bottom: 41%;
-      right: 16%; 
+      right: 13%; 
       color: #fff;
       text-transform: uppercase;
+      
       }
 
 body {
