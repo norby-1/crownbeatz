@@ -10,6 +10,35 @@
 html {
   font-size: 62.5%; }
 
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(90, 16, 68, 0.329), rgba(134, 39, 94, 0.356)), url(../img/shutterstock_415922566-825x465.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative; }
+    .header__header-logo {
+      position: absolute;
+      height: 10rem;
+      top: 20%;
+      left: 70%; }
+      .header__header-name{
+      position: absolute;
+      height: 10rem;
+      bottom: 48%;
+      right: 12%; 
+      font-size: 4rem;
+      color: #fff;
+      }
+    .header__header-caption{
+      position: absolute;
+      height: 10rem;
+      bottom: 41%;
+      right: 16%; 
+      color: #fff;
+      text-transform: uppercase;
+      }
+
 body {
   box-sizing: border-box; }
 
@@ -124,6 +153,71 @@ body {
 #or{display: inline-block;
 padding: 1rem;}
 
+.form__group:not(:last-child) {
+  margin-bottom: 4rem; }
+
+.form__group--input {
+  width: 95%;
+  padding: 1.5rem 1.7rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all .3s; }
+  .form__group--input:focus {
+    outline: none;
+    border-bottom: 3px solid #55c57a; }
+  .form__group--input-webkit-input-placeholder {
+    color: #999; }
+
+.form__group--label {
+  display: block;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all .5s; }
+
+.form__group--input:placeholder-shown + .form__group--label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3.5rem); }
+
+.form__group--input:focus:invalid {
+  border-bottom: 3px solid #ff7730; }
+
+.form__button {
+  display: inline-block;
+  position: relative; }
+  .form__button:last-child {
+    margin-left: 5rem; }
+  .form__button--label {
+    padding-left: 2rem;
+    cursor: pointer; }
+  .form__button--input {
+    visibility: hidden; }
+  .form__button--size {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 3px solid #55c57a;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    cursor: pointer; }
+    .form__button--size::after {
+      content: " ";
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #55c57a;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0; }
+  .form__button--input:checked + .form__button--label .form__button--size::after {
+    opacity: 1; }
+
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -149,3 +243,4 @@ padding: 1rem;}
     width: calc(2*( (100% - 3 * 6rem)/4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3*( (100% - 3 * 6rem)/4) + 2*6rem); }
+
