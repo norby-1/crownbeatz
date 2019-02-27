@@ -10,6 +10,48 @@
 html {
   font-size: 62.5%; }
 
+  .main-nav{
+    float: right;
+    margin: 55px 10px;
+    position: absolute;
+    top:10%;
+    right:1%;
+    
+    
+    
+    
+    }
+    
+    .main-nav li{
+      list-style: none;
+       display: inline-block;
+      text-transform: uppercase;
+      font-size: 90%;
+      margin-right: 25px;
+      padding: 8px 0;
+      border-bottom: 1px solid #962459;
+      transition: border-bottom 0.5s;
+      float: right;
+      text-align: center;
+      width: 50%;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited,
+    .main-nav li a:hover,
+    .main-nav li a:active{
+      color: #000;
+      text-decoration: none;
+      text-align: center;
+     
+      
+    }
+    
+    .main-nav li:hover,
+    .main-nav li:active{
+      color: #962459 ;
+    }
+    
   .header {
     background-image: linear-gradient(to right bottom, rgba(90, 16, 68, 0.432), rgba(134, 39, 94, 0.822)), url(../img/shutterstock_415922566-825x465.jpg);
     background-position: top;
@@ -183,7 +225,7 @@ padding: 1rem;}
   transform: translateY(-3.5rem); }
 
 .form__group--input:focus:invalid {
-  border-bottom: 3px solid #ff7730; }
+  border-bottom: 3px solid #962459; }
 
 .form__button {
   display: inline-block;
