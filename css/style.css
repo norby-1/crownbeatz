@@ -226,6 +226,11 @@ padding: 1rem;}
        display: inline-block;
     }
 
+    .playlist{
+      background-image:linear-gradient(104deg, rgba(151, 25, 103, 0.171) 50%, transparent 70%);
+      padding: 2rem;
+    }
+
     .gallery{
       margin-top: 80px;
       }
@@ -254,6 +259,10 @@ padding: 1rem;}
       transform: scale(1.03);
       opacity: 1;
     
+    }
+    .gallery {
+      
+      text-align: center;
     }
 
 
