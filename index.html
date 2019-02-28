@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/icon-fonts.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -26,7 +24,7 @@
                             <div class="u-text-center u-margin-medium">
                                     <h3 class="heading-secondary">Confirm your membership</h3>
                                 </div>
-                        <form action="#">
+                        <form id="form" action="#">
                             <div class="form__wrap">
                                 <div class="form__group">
                                     <input type="text" class="form__group--input" id="name" placeholder="User name" required>
@@ -40,89 +38,14 @@
     
                                 <div class="button__wrap">
                                        
-                                    <button class="btn btn--color">Login &rarr;</button>  
+                                    <button class="btn btn--color" id="login">Login &rarr;</button>  
                                     <div id = "or">OR</div>
-                                    <button class="btn btn--white">Register &larr;</button>   
+                                    <button class="btn btn--white" type="submit" id="register">Register &larr;</button>   
                             </div>
                         </form>
         </header>
 
-    
- 
-<!--
-        <section class = "grid">
-            <div class = "row">
-                <div class = "col-1-of-2">
-                    col-1-of-2
-                </div>
-                <div class = "col-1-of-2">
-                        col-1-of-2
-                    </div>
-            </div>
-
-            <div class = "row">
-                    <div class = "col-1-of-3">
-                        col-1-of-3
-                    </div>
-                    <div class = "col-1-of-3">
-                            col-1-of-3
-                        </div>
-                        <div class = "col-1-of-3">
-                                col-1-of-3
-                            </div>
-                </div>
-
-                <div class = "row">
-                        <div class = "col-1-of-3">
-                            col-1-of-3
-                        </div>
-                        <div class = "col-2-of-3">
-                                col-2-of-3
-                            </div>
-                    </div>
-
-                    <div class = "row">
-                            <div class = "col-1-of-4">
-                                col-1-of-4
-                            </div>
-                            <div class = "col-1-of-4">
-                                    col-1-of-4
-                                </div>
-                                <div class = "col-1-of-4">
-                                        col-1-of-4
-                                    </div>
-                                    <div class = "col-1-of-4">
-                                            col-1-of-4
-                                        </div>
-                        </div>
-
-                        <div class = "row">
-                                <div class = "col-1-of-4">
-                                    col-1-of-4
-                                </div>
-                                <div class = "col-1-of-4">
-                                        col-1-of-4
-                                    </div>
-                                    <div class = "col-2-of-4">
-                                            col-2-of-4
-                                        </div>
-                                     
-                         </div>
-
-                         <div class = "row">
-                                <div class = "col-1-of-4">
-                                    col-1-of-4
-                                </div>
-                                <div class = "col-3-of-4">
-                                        col-3-of-4
-                                    </div>
-                                    
-                         </div>
-        
-    
-
-        </section>
-        -->
-        
+    <script src="jquery.min.js"></script>
+     <script src="script.js"></script>
     </body>
 </html>

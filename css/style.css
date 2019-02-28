@@ -16,11 +16,15 @@ html {
     position: absolute;
     top:10%;
     right:1%;
+  }
+    
+
+    /* header{
+      position:fixed;
+    } */
     
     
     
-    
-    }
     .home_logo{
       position: absolute;
       top:25%;
@@ -31,6 +35,7 @@ html {
     .home_logo-image{
       width: 80%;
       text-align: center;
+      
       
     }
     .home_logo-name{
@@ -281,9 +286,11 @@ padding: 1rem;}
 
     .main_wrap{
       text-align: center;
+      
     }
     .mainVideo{
        display: inline-block;
+       
     }
 
     .playlist{
