@@ -100,7 +100,7 @@ $(document).ready(function () {
   
   
             $('main').append(`
-              <article class="item" data-key="${vid}">
+              <article class="item" input="${vid}">
   
                 <img src="${thumb}" alt="" class="thumb">
                 <div class="details">
@@ -114,7 +114,7 @@ $(document).ready(function () {
     }
   
     $('main').on('click', 'article', function () {
-        var id = $(this).attr('data-key');
+        var id = $(this).attr('input');
         display(id);
     });
    
