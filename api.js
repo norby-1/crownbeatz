@@ -2,21 +2,22 @@
 $(document).ready(function () {
 
     var key = 'AIzaSyAIZ6Ll9I7sNTrnBmELmgPtxuMsiR_BA7A';
-    var playlistId = 'PL9tY0BWXOZFu8MzzbNVtUvHs0cQ_gZ03m';
+    var playlistId = 'PLJYyuMTDI-iepsUos_KlQkDvA5JU3pd4c';
     var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
   
   
     var options = {
         part: 'snippet',
         key: key,
-        maxResults: 24,
+        maxResults: 10,
         playlistId: playlistId
     }
  
-    tubes();
+    getData();
 
-    function tubes() {
+    function getData() {
         $.getJSON(URL, options, function (data) {
+          console.log(data);
             var id = data.items[0].snippet.resourceId.videoId;
             mainVid(id);
             resultsLoop(data);
