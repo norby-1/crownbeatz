@@ -1,15 +1,6 @@
 {
   "users": [
-    {
-      "name": "norby",
-      "password": "trials",
-      "id": 1
-    },
-    {
-      "name": "norby",
-      "password": "trials",
-      "id": 2
-    },
+   
     {
       "name": "tope",
       "password": "alade",
@@ -25,5 +16,8 @@
       "password": "trials",
       "id": 5
     }
-  ]
+    
+  ],
+
+  "playlist":[]
 }

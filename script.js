@@ -1,66 +1,62 @@
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    
 
-    $('#register').click(function(e) {
+    $('#register').click(function (e) {
         e.preventDefault();
 
         var name = $('#name').val();
         var password = $('#password').val();
 
-    $.ajax({
+        $.ajax({
 
-        type: "POST",
-        url: "http://localhost:3000/users",
-        data: {name : name,
-               password: password},
-       
-        success : function(res) {
-            $('#form')[0].reset();
-            alert("Admitted!");
+            type: "POST",
+            url: "http://localhost:3000/users",
+            data: {
+                name: name,
+                password: password
+            },
 
-        }
+            success: function (res) {
+                $('#form')[0].reset();
+                alert("Admitted!");
 
-    })
-
-    })
-
-
-    $('#login').click(function(e) {
-        e.preventDefault();
-        var name = $('#name').val();
-        var password = $('#password').val();
-    
-
-    $.ajax({
-
-        type: "GET",
-        url: "http://localhost:3000/users",
-        
-              
-        success : function(obj){
-            
-            console.log(obj);
-            console.log(obj[0].name);
-                console.log(obj[0].password);
-                console.log(name,password);
-            for(let i=0; i<obj.length; i++){
-                
-                if(obj[i].name == name && obj[i].password == password){
-                    alert ("You're welcome");
-                    window.location.replace('home.html');
-                }else{
-                    $('#form')[0].reset();
-                    // alert("You've got to try again");
-                    
-                }
             }
-        }
+
+        })
 
     })
 
+
+
+    $('#login').click(function (e) {
+        e.preventDefault();
+
+        var name = $('#name').val();
+        var password = $('#password').val();
+
+        $.ajax({
+
+            type: "GET",
+            url: "http://localhost:3000/users",
+            data: {
+                name: name,
+                password: password
+            },
+
+            success: function (res) {
+                console.log(res);
+               for(let i=0;i<res.length;i++){
+                   if(name==res[i].name && password==res[i].password){
+                       alert("You're in!");
+                       window.location.assign('home.html')
+                   }else{alert("outside!");}
+               }
+
+            }
+
+        })
+
     })
-
-
+   
 })
