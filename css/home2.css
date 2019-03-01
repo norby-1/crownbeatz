@@ -11,11 +11,11 @@ html {
   font-size: 62.5%; }
 
   .main-nav{
-    float: right;
+    /* float: right; */
     margin: 55px 10px;
-    position: absolute;
-    top:10%;
-    left:80%;
+    position: fixed;
+    top:1%;
+    right:10%;
   }
     
 
@@ -27,11 +27,12 @@ html {
     
     .home_logo{
       position: absolute;
-      top:30%;
-      left:10%;
+      /* top:80%;
+      left:10%; */
       color: #fff;
+      margin: 60px;
       
-    }
+    } 
     .home_logo-image{
       width: 80%;
       text-align: center;
@@ -52,7 +53,7 @@ html {
       font-size: 90%;
       margin-right: 25px;
       padding: 8px 0;
-      border-bottom: 1px solid #962459;
+      border-bottom: 1px solid #aa929d;
       transition: border-bottom 0.5s;
       float: right;
       text-align: center;
@@ -63,7 +64,7 @@ html {
     .main-nav li a:visited,
     .main-nav li a:hover,
     .main-nav li a:active{
-      color: #000;
+      color: rgb(247, 215, 230);
       text-decoration: none;
       text-align: center;
      

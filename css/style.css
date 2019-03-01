@@ -11,11 +11,12 @@ html {
   font-size: 62.5%; }
 
   .main-nav{
-    float: right;
-    margin: 55px 10px;
     position: absolute;
-    top:10%;
-    right:1%;
+    /* margin: 55px 10px;
+    position: absolute; */
+    top:5%;
+    right:10%;
+    
   }
     
 
@@ -52,10 +53,10 @@ html {
       font-size: 90%;
       margin-right: 25px;
       padding: 8px 0;
-      border-bottom: 1px solid #962459;
+      border-bottom: 1px solid #e5c9d6;
       transition: border-bottom 0.5s;
       float: right;
-      text-align: center;
+      /* text-align: center; */
       width: 50%;
     }
     
@@ -63,7 +64,7 @@ html {
     .main-nav li a:visited,
     .main-nav li a:hover,
     .main-nav li a:active{
-      color: #000;
+      color: #fff;
       text-decoration: none;
       text-align: center;
      
@@ -72,7 +73,7 @@ html {
     
     .main-nav li:hover,
     .main-nav li:active{
-      color: #962459 ;
+      color: #fff ;
     }
     
   .header {
