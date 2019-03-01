@@ -13,9 +13,9 @@ $(document).ready(function () {
         playlistId: playlistId
     }
  
-    loadVids();
+    tubes();
 
-    function loadVids() {
+    function tubes() {
         $.getJSON(URL, options, function (data) {
             var id = data.items[0].snippet.resourceId.videoId;
             mainVid(id);
@@ -32,12 +32,12 @@ $(document).ready(function () {
     
     function resultsLoop(data) {
   
-        $.each(data.items, function (i, item) {
+        $.each(data.items, function (i) {
   
-            var thumb = item.snippet.thumbnails.medium.url;
-            var title = item.snippet.title;
-            var desc = item.snippet.description.substring(0, 100);
-            var vid = item.snippet.resourceId.videoId;
+            var thumb = data.items[i].snippet.thumbnails.medium.url;
+            var title = data.items[i].snippet.title;
+            var desc = data.items[i].snippet.description.substring(0, 100);
+            var vid = data.items[i].snippet.resourceId.videoId;
   
   
             $('main').append(`
